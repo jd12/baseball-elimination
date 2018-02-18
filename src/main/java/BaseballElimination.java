@@ -48,7 +48,7 @@ public class BaseballElimination {
    * @param args
    */
   public static void main(String[] args) {
-    BaseballElimination division = new BaseballElimination(args[0]);
+    BaseballElimination division = new BaseballElimination("baseball-testing-files/teams4.txt");
     for (String team : division.teams()) {
         if (division.isEliminated(team)) {
             StdOut.print(team + " is eliminated by the subset R = { ");
