@@ -1,6 +1,8 @@
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -144,14 +146,11 @@ public class BaseballEliminationTest {
    */
   @Test
   public void testCertificateOfEliminationNonTriviallyEliminatedTeams4() {
-    String[] expectedEliminationCertificate = {"Atlanta", "New_York"};
-    ArrayList<String> teams4ExpectedList = new ArrayList<String>();
-    for (String team: expectedEliminationCertificate) {
-      teams4ExpectedList.add(team);
-    }
+    List<String> teams4ExpectedList = Arrays.asList("Atlanta", "New York");
+    
     for (String actualEliminationTeam: 
       baseballEliminationTeams4.certificateOfElimination("Philadelphia")) {
-      assertTrue(actualEliminationTeam + " is not in the expected list",teams4ExpectedList.contains(actualEliminationTeam));
+      assertTrue(actualEliminationTeam + " is not in the expected list", teams4ExpectedList.contains(actualEliminationTeam));
 
     }
 
