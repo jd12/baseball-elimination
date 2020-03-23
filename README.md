@@ -1,6 +1,6 @@
 ## Assignment Specification
-http://coursera.cs.princeton.edu/algs4/assignments/baseball.html
+https://coursera.cs.princeton.edu/algs4/assignments/baseball/specification.php
 
 ## Checklist 
-http://coursera.cs.princeton.edu/algs4/checklists/baseball.html
+https://coursera.cs.princeton.edu/algs4/assignments/baseball/faq.php
 
